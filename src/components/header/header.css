@@ -56,6 +56,15 @@
   .menu_items_wraper {
     display: none;
   }
+  .menu-icon {
+    display: block;
+  }
+  .nav {
+    display: block;
+  }
+  .menu_label {
+    display: block;
+  }
   .navBarHamburger__mainWrapper {
     width: 20px;
     height: 15px;
@@ -351,10 +360,13 @@
   .nav ul li a {
     font-size: 20px;
   }
-  .menu-icon .nav {
-    display: block;
-  }
 }
-.menu-icon .nav {
+.menu-icon {
+  display: none;
+}
+.nav {
+  display: none;
+}
+.menu_label {
   display: none;
 }

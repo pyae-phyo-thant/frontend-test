@@ -28,7 +28,7 @@ const Header = () => {
           id="menu-icon"
           name="menu-icon"
         />
-        <label htmlFor="menu-icon"></label>
+        <label className="menu_label" htmlFor="menu-icon"></label>
         <nav className="nav">
           <ul className="pt-5">
             <li>
