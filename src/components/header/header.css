@@ -351,4 +351,10 @@
   .nav ul li a {
     font-size: 20px;
   }
+  .menu-icon .nav {
+    display: block;
+  }
+}
+.menu-icon .nav {
+  display: none;
 }
