@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import logo from "./logo-codigo-red.svg";
 import "./header.css";
 
@@ -22,17 +22,86 @@ const Header = () => {
             </a>
           )}
         </div>
-        <section className="navBarHamburger__mainWrapper clearfix ">
-          <div className="circle">
-            <div className="ratio"></div>
-          </div>
-          <div className="bars">
-            <span className="navBarHamburger__strokeElement"></span>
-            <span className="navBarHamburger__strokeElement"></span>
-            <span className="navBarHamburger__strokeElement"></span>
-            <span className="navBarHamburger__strokeElement"></span>
-          </div>
-        </section>
+        <input
+          className="menu-icon"
+          type="checkbox"
+          id="menu-icon"
+          name="menu-icon"
+        />
+        <label htmlFor="menu-icon"></label>
+        <nav className="nav">
+          <ul className="pt-5">
+            <li>
+              <a href="#">Work</a>
+            </li>
+            <li>
+              <a href="#">Solutions</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Request a quote</a>
+            </li>
+            <li>
+              <a href="#">Let's chat</a>
+            </li>
+            <li>
+              <div className="social__wrapper">
+                <a
+                  href="https://www.facebook.com/codigo.co/"
+                  target="_blank"
+                  className="social__item"
+                >
+                  <img
+                    src="https://www.codigo.co/img/icons/social-facebook.svg"
+                    width="12"
+                    height="22"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/CodigoApps"
+                  target="_blank"
+                  className="social__item"
+                >
+                  <img
+                    src="https://www.codigo.co/img/icons/social-twitter.svg"
+                    width="23"
+                    height="18"
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com/hellocodigo/"
+                  target="_blank"
+                  className="social__item"
+                >
+                  <img
+                    src="https://www.codigo.co/img/icons/social-instagram.svg"
+                    width="21"
+                    height="19"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/codigo-pte-ltd"
+                  target="_blank"
+                  className="social__item"
+                >
+                  <img
+                    src="https://www.codigo.co/img/icons/social-linkedIn.svg"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
         <section className="menu_items_wraper">
           {window.location.href ===
           "http://localhost:3000/work/ocbc-pay-anyone" ? (
