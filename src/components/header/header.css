@@ -63,7 +63,7 @@
     display: block;
   }
   .menu_label {
-    display: block;
+    display: block !important;
   }
   .navBarHamburger__mainWrapper {
     width: 20px;
@@ -368,5 +368,5 @@
   display: none;
 }
 .menu_label {
-  display: none;
+  display: none !important;
 }
