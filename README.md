@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Please install craco for tailwindcss frist
+Please install craco for tailwindcss first
 
 ### `npm install @craco/craco`
 
